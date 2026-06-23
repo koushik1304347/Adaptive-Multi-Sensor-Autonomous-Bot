@@ -1,0 +1,816 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/StraightRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/Crossroad.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/clearpath/moose/protos/Moose.proto"
+
+WorldInfo {
+  basicTimeStep 10
+}
+Viewpoint {
+  orientation -0.15617376188860604 0.9370425713316363 0.3123475237772121 1.7
+  position -192.4790289313512 -230.1446714371807 158.794590458714
+  near 1
+  follow "moose"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation 0 0 -0.02
+  size 1500 1500
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/worlds/textures/ground_grass.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Crossroad {
+  translation -200 -200 0
+  name "c1"
+  id "c1"
+  connectedRoadIDs [
+    "h1_1"
+    "v1_1"
+  ]
+}
+Crossroad {
+  translation -100 -200 0
+  name "c2"
+  id "c2"
+  connectedRoadIDs [
+    "h1_1"
+    "h1_2"
+    "v2_1"
+  ]
+}
+Crossroad {
+  translation 0 -200 0
+  name "c3"
+  id "c3"
+  connectedRoadIDs [
+    "h1_2"
+    "h1_3"
+    "v3_1"
+  ]
+}
+Crossroad {
+  translation 100 -200 0
+  name "c4"
+  id "c4"
+  connectedRoadIDs [
+    "h1_3"
+    "h1_4"
+    "v4_1"
+  ]
+}
+Crossroad {
+  translation 200 -200 0
+  name "c5"
+  id "c5"
+  connectedRoadIDs [
+    "h1_4"
+    "v5_1"
+  ]
+}
+Crossroad {
+  translation -200 -100 0
+  name "c6"
+  id "c6"
+  connectedRoadIDs [
+    "h2_1"
+    "v1_1"
+    "v1_2"
+  ]
+}
+Crossroad {
+  translation -100 -100 0
+  name "c7"
+  id "c7"
+  connectedRoadIDs [
+    "h2_1"
+    "h2_2"
+    "v2_1"
+    "v2_2"
+  ]
+}
+Crossroad {
+  translation 0 -100 0
+  name "c8"
+  id "c8"
+  connectedRoadIDs [
+    "h2_2"
+    "h2_3"
+    "v3_1"
+    "v3_2"
+  ]
+}
+Crossroad {
+  translation 100 -100 0
+  name "c9"
+  id "c9"
+  connectedRoadIDs [
+    "h2_3"
+    "h2_4"
+    "v4_1"
+    "v4_2"
+  ]
+}
+Crossroad {
+  translation 200 -100 0
+  name "c10"
+  id "c10"
+  connectedRoadIDs [
+    "h2_4"
+    "v5_1"
+    "v5_2"
+  ]
+}
+Crossroad {
+  translation -200 0 0
+  name "c11"
+  id "c11"
+  connectedRoadIDs [
+    "h3_1"
+    "v1_2"
+    "v1_3"
+  ]
+}
+Crossroad {
+  translation -100 0 0
+  name "c12"
+  id "c12"
+  connectedRoadIDs [
+    "h3_1"
+    "h3_2"
+    "v2_2"
+    "v2_3"
+  ]
+}
+Crossroad {
+  name "c13"
+  id "c13"
+  connectedRoadIDs [
+    "h3_2"
+    "h3_3"
+    "v3_2"
+    "v3_3"
+  ]
+}
+Crossroad {
+  translation 100 0 0
+  name "c14"
+  id "c14"
+  connectedRoadIDs [
+    "h3_3"
+    "h3_4"
+    "v4_2"
+    "v4_3"
+  ]
+}
+Crossroad {
+  translation 200 0 0
+  name "c15"
+  id "c15"
+  connectedRoadIDs [
+    "h3_4"
+    "v5_2"
+    "v5_3"
+  ]
+}
+Crossroad {
+  translation -200 100 0
+  name "c16"
+  id "c16"
+  connectedRoadIDs [
+    "h4_1"
+    "v1_3"
+    "v1_4"
+  ]
+}
+Crossroad {
+  translation -100 100 0
+  name "c17"
+  id "c17"
+  connectedRoadIDs [
+    "h4_1"
+    "h4_2"
+    "v2_3"
+    "v2_4"
+  ]
+}
+Crossroad {
+  translation 0 100 0
+  name "c18"
+  id "c18"
+  connectedRoadIDs [
+    "h4_2"
+    "h4_3"
+    "v3_3"
+    "v3_4"
+  ]
+}
+Crossroad {
+  translation 100 100 0
+  name "c19"
+  id "c19"
+  connectedRoadIDs [
+    "h4_3"
+    "h4_4"
+    "v4_3"
+    "v4_4"
+  ]
+}
+Crossroad {
+  translation 200 100 0
+  name "c20"
+  id "c20"
+  connectedRoadIDs [
+    "h4_4"
+    "v5_3"
+    "v5_4"
+  ]
+}
+Crossroad {
+  translation -200 200 0
+  name "c21"
+  id "c21"
+  connectedRoadIDs [
+    "h5_1"
+    "v1_4"
+  ]
+}
+Crossroad {
+  translation -100 200 0
+  name "c22"
+  id "c22"
+  connectedRoadIDs [
+    "h5_1"
+    "h5_2"
+    "v2_4"
+  ]
+}
+Crossroad {
+  translation 0 200 0
+  name "c23"
+  id "c23"
+  connectedRoadIDs [
+    "h5_2"
+    "h5_3"
+    "v3_4"
+  ]
+}
+Crossroad {
+  translation 100 200 0
+  name "c24"
+  id "c24"
+  connectedRoadIDs [
+    "h5_3"
+    "h5_4"
+    "v4_4"
+  ]
+}
+Crossroad {
+  translation 200 200 0
+  name "c25"
+  id "c25"
+  connectedRoadIDs [
+    "h5_4"
+    "v5_4"
+  ]
+}
+StraightRoadSegment {
+  translation -200 -200 0
+  name "h1_1"
+  id "h1_1"
+  startJunction "c1"
+  endJunction "c2"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 -200 0
+  name "h1_2"
+  id "h1_2"
+  startJunction "c2"
+  endJunction "c3"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 -200 0
+  name "h1_3"
+  id "h1_3"
+  startJunction "c3"
+  endJunction "c4"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 -200 0
+  name "h1_4"
+  id "h1_4"
+  startJunction "c4"
+  endJunction "c5"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 -100 0
+  name "h2_1"
+  id "h2_1"
+  startJunction "c6"
+  endJunction "c7"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 -100 0
+  name "h2_2"
+  id "h2_2"
+  startJunction "c7"
+  endJunction "c8"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 -100 0
+  name "h2_3"
+  id "h2_3"
+  startJunction "c8"
+  endJunction "c9"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 -100 0
+  name "h2_4"
+  id "h2_4"
+  startJunction "c9"
+  endJunction "c10"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 0 0
+  name "h3_1"
+  id "h3_1"
+  startJunction "c11"
+  endJunction "c12"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 0 0
+  name "h3_2"
+  id "h3_2"
+  startJunction "c12"
+  endJunction "c13"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  name "h3_3"
+  id "h3_3"
+  startJunction "c13"
+  endJunction "c14"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 0 0
+  name "h3_4"
+  id "h3_4"
+  startJunction "c14"
+  endJunction "c15"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 100 0
+  name "h4_1"
+  id "h4_1"
+  startJunction "c16"
+  endJunction "c17"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 100 0
+  name "h4_2"
+  id "h4_2"
+  startJunction "c17"
+  endJunction "c18"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 100 0
+  name "h4_3"
+  id "h4_3"
+  startJunction "c18"
+  endJunction "c19"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 100 0
+  name "h4_4"
+  id "h4_4"
+  startJunction "c19"
+  endJunction "c20"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 200 0
+  name "h5_1"
+  id "h5_1"
+  startJunction "c21"
+  endJunction "c22"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 200 0
+  name "h5_2"
+  id "h5_2"
+  startJunction "c22"
+  endJunction "c23"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 200 0
+  name "h5_3"
+  id "h5_3"
+  startJunction "c23"
+  endJunction "c24"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 200 0
+  name "h5_4"
+  id "h5_4"
+  startJunction "c24"
+  endJunction "c25"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 -200 0
+  rotation 0 0 1 1.570796
+  name "v1_1"
+  id "v1_1"
+  startJunction "c1"
+  endJunction "c6"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 -100 0
+  rotation 0 0 1 1.570796
+  name "v1_2"
+  id "v1_2"
+  startJunction "c6"
+  endJunction "c11"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 0 0
+  rotation 0 0 1 1.570796
+  name "v1_3"
+  id "v1_3"
+  startJunction "c11"
+  endJunction "c16"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -200 100 0
+  rotation 0 0 1 1.570796
+  name "v1_4"
+  id "v1_4"
+  startJunction "c16"
+  endJunction "c21"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 -200 0
+  rotation 0 0 1 1.570796
+  name "v2_1"
+  id "v2_1"
+  startJunction "c2"
+  endJunction "c7"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 -100 0
+  rotation 0 0 1 1.570796
+  name "v2_2"
+  id "v2_2"
+  startJunction "c7"
+  endJunction "c12"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 0 0
+  rotation 0 0 1 1.570796
+  name "v2_3"
+  id "v2_3"
+  startJunction "c12"
+  endJunction "c17"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation -100 100 0
+  rotation 0 0 1 1.570796
+  name "v2_4"
+  id "v2_4"
+  startJunction "c17"
+  endJunction "c22"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 -200 0
+  rotation 0 0 1 1.570796
+  name "v3_1"
+  id "v3_1"
+  startJunction "c3"
+  endJunction "c8"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 -100 0
+  rotation 0 0 1 1.570796
+  name "v3_2"
+  id "v3_2"
+  startJunction "c8"
+  endJunction "c13"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  rotation 0 0 1 1.570796
+  name "v3_3"
+  id "v3_3"
+  startJunction "c13"
+  endJunction "c18"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 0 100 0
+  rotation 0 0 1 1.570796
+  name "v3_4"
+  id "v3_4"
+  startJunction "c18"
+  endJunction "c23"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 -200 0
+  rotation 0 0 1 1.570796
+  name "v4_1"
+  id "v4_1"
+  startJunction "c4"
+  endJunction "c9"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 -100 0
+  rotation 0 0 1 1.570796
+  name "v4_2"
+  id "v4_2"
+  startJunction "c9"
+  endJunction "c14"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 0 0
+  rotation 0 0 1 1.570796
+  name "v4_3"
+  id "v4_3"
+  startJunction "c14"
+  endJunction "c19"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 100 100 0
+  rotation 0 0 1 1.570796
+  name "v4_4"
+  id "v4_4"
+  startJunction "c19"
+  endJunction "c24"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 200 -200 0
+  rotation 0 0 1 1.570796
+  name "v5_1"
+  id "v5_1"
+  startJunction "c5"
+  endJunction "c10"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 200 -100 0
+  rotation 0 0 1 1.570796
+  name "v5_2"
+  id "v5_2"
+  startJunction "c10"
+  endJunction "c15"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 200 0 0
+  rotation 0 0 1 1.570796
+  name "v5_3"
+  id "v5_3"
+  startJunction "c15"
+  endJunction "c20"
+  width 10.5
+  length 100
+}
+StraightRoadSegment {
+  translation 200 100 0
+  rotation 0 0 1 1.570796
+  name "v5_4"
+  id "v5_4"
+  startJunction "c20"
+  endJunction "c25"
+  width 10.5
+  length 100
+}
+Moose {
+  translation -200 -200 0.15
+  name "moose"
+  controller "controller_cl"
+  bodySlot [
+    RangeFinder {
+      translation 0.6 0 1.1
+      name "depth"
+      width 320
+      height 240
+      maxRange 10
+    }
+    Lidar {
+      translation 0 0 1.4
+      horizontalResolution 720
+      fieldOfView 6.283
+      numberOfLayers 1
+      maxRange 20
+    }
+    Camera {
+      translation 0.5 0 1
+      rotation 1 0 0 -1.57
+      width 1280
+      height 720
+    }
+    GPS {
+    }
+    Compass {
+    }
+    Emitter {
+      name "emitter"
+      channel 1
+    }
+    Receiver {
+      name "receiver"
+      channel 1
+    }
+  ]
+}
+
+Moose {
+  translation -200 100 0.15
+  name "moose_2"
+  controller "controller_cl"
+  bodySlot [
+    RangeFinder {
+      translation 0.6 0 1.1
+      name "depth"
+      width 320
+      height 240
+      maxRange 10
+    }
+    Lidar {
+      translation 0 0 1.4
+      horizontalResolution 720
+      fieldOfView 6.283
+      numberOfLayers 1
+      maxRange 20
+    }
+    Camera {
+      translation 0.5 0 1
+      rotation 1 0 0 -1.57
+      width 1280
+      height 720
+    }
+    GPS {
+    }
+    Compass {
+    }
+    Emitter {
+      name "emitter"
+      channel 1
+    }
+    Receiver {
+      name "receiver"
+      channel 1
+    }
+  ]
+}
+
+# -------------------------------------------------------
+# OBSTACLES  (added – do NOT remove)
+# -------------------------------------------------------
+
+# OBSTACLE 1 – Stopped red vehicle on segment v3_3 (WP 13→18, road x=0, y=0..100)
+# Placed at (0, 50) – squarely in the centre of that road segment.
+Solid {
+  translation 0 50 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.1 0.1
+        roughness 0.8
+        metalness 0.2
+      }
+      geometry Box {
+        size 4.5 4.0 1.5
+      }
+    }
+  ]
+  name "obstacle_stopped_vehicle"
+  boundingObject Box {
+    size 4.5 4.0 1.5
+  }
+}
+
+# OBSTACLE 2 – Orange road barrier on segment h3_3 (WP 13→14, road y=0, x=0..100)
+# Placed at (50, 0) – blocking the horizontal road.
+Solid {
+  translation 50 0 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1.0 0.5 0.0
+        roughness 1.0
+        metalness 0.0
+      }
+      geometry Box {
+        size 0.4 9.0 1.5
+      }
+    }
+  ]
+  name "obstacle_road_barrier"
+  boundingObject Box {
+    size 0.4 9.0 1.5
+  }
+}
+
+# OBSTACLE 3 – Grey debris / rubble on segment h4_2 (WP 17→18, road y=100, x=-100..0)
+# Placed at (-50, 100) – forcing a detour on the upper-left road.
+Solid {
+  translation -50 100 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.5 0.5
+        roughness 1.0
+        metalness 0.0
+      }
+      geometry Box {
+        size 5.0 5.0 1.5
+      }
+    }
+  ]
+  name "obstacle_debris"
+  boundingObject Box {
+    size 5.0 5.0 1.5
+  }
+}
